@@ -74,14 +74,51 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         ],
       },
+      { 
+        text: '其它', 
+        link: '/other/',
+        items: [
+          {
+            text: 'Github',
+            items: [
+              { text: '快速入门', link: '/pages/2e2f07/' },
+            ],
+          },
+          {
+            text: '学习笔记',
+            items: [
+              { text: '《JavaScript教程》', link: '/note/javascript/' },
+              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
+              { text: '《ES6 教程》', link: '/note/es6/' },
+              { text: '《Vue》', link: '/note/vue/' },
+              { text: '《React》', link: '/note/react/' },
+              {
+                text: '《TypeScript 从零实现 axios》',
+                link: '/note/typescript-axios/',
+              },
+              {
+                text: '《Git》',
+                link: '/note/git/',
+              },
+              {
+                text: 'TypeScript',
+                link: '/pages/51afd6/',
+              },
+              {
+                text: 'JS设计模式总结',
+                link: '/pages/4643cd/',
+              },
+            ],
+          },
+        ], 
+      },
       { text: '随笔', link: '/write/' },
-      { text: '其它', link: '/other/' },
       { text: '关于', link: '/about/' },
 
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'https://github.com/YQisme', // 导航栏右侧生成Github链接
+    repo: 'https://github.com/YQisme/blog', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -167,7 +204,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['link', { rel: 'icon', href: '/img/ball.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/logo.ico' }], //favicons，资源放在public文件夹
     [
       'meta',
       {
