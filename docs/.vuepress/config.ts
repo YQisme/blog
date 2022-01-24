@@ -176,7 +176,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'yangqi7isme@163.com',
+          link: 'mailto:yangqi7isme@163.com',
         },
         {
           iconClass: 'icon-github',
