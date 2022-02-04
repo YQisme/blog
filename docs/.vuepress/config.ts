@@ -232,6 +232,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // },
     
+    //Latex公式
+    'vuepress-plugin-mathjax':
+      {
+        target: 'svg',
+
+      },
+
     //动态网页标题
     'dynamic-title':
     {
