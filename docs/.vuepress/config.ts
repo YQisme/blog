@@ -5,8 +5,16 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
+// export default defineUserConfig<DefaultThemeOptions>({
+//   // Other stuff are ignored
+
+//   extendsMarkdown: md => {
+//     md.use(require('markdown-it-mathjax3'));
+//   }
+// })
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
+
   theme: 'vdoing', // 使用npm包主题
   // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
@@ -231,13 +239,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   color: '#11a8cd', // 爱心颜色，默认随机色
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // },
-    
-    //Latex公式
-    'vuepress-plugin-mathjax':
-      {
-        target: 'svg',
+    // 'markdown-it-mathjax3':
+    // {
 
-      },
+    // },
 
     //动态网页标题
     'dynamic-title':
@@ -343,6 +348,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   },
 
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    plugins:['markdown-it-mathjax3']
   }
 })
+
