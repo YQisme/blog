@@ -77,48 +77,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/practice/',
         items: [
           { text: '动手学深度学习', link: '/pages/baed3f/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: 'GitHub', link: '/pages/4b2e49/' },
+          { text: 'Linux', link: '/pages/9c32e1/' },
         ],
       },
       { 
         text: '其它', 
         link: '/other/',
         items: [
-          {
-            text: 'Github',
-            items: [
-              { text: '快速入门', link: '/pages/2e2f07/' },
-            ],
-          },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
-        ], 
+          { text: '论文', link: '/pages/2e2df7/' },
+          { text: '碎片', link: '/pages/effdf7/' },
+        ],
+      
       },
       { text: '随笔', link: '/write/' },
       { text: '关于', link: '/about/' },
@@ -243,6 +213,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // {
 
     // },
+    //可以使用脚注,有些问题，还没有实现
+    'vuepress-plugin-md-enhance':{footnote: true},
 
     //动态网页标题
     'dynamic-title':
@@ -347,9 +319,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },
   },
 
+
   markdown: {
     lineNumbers: true,
     plugins:['markdown-it-mathjax3']
+  
   }
 })
 
