@@ -97,8 +97,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '其它', 
         link: '/other/',
         items: [
-          { text: '论文', link: '/pages/2e2df7/' },
-          { text: '碎片', link: '/pages/effdf7/' },
+          { text: '论文', link: '/pages/e22df7/' },
+          { text: '碎片', link: '/pages/ffedf7/' },
         ],
       
       },
