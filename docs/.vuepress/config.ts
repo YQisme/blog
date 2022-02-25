@@ -5,13 +5,6 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-// export default defineUserConfig<DefaultThemeOptions>({
-//   // Other stuff are ignored
-
-//   extendsMarkdown: md => {
-//     md.use(require('markdown-it-mathjax3'));
-//   }
-// })
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
