@@ -81,6 +81,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: 'Linux', link: '/pages/9c32e1/' },
         ],
       },
+
+      {
+        text: '硬件',
+        link: '/hardware/',
+
+      },
+      {
+        text: '软件',
+        link: '/software/',
+
+      },
+      
       { 
         text: '其它', 
         link: '/other/',
